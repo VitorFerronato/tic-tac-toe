@@ -7,6 +7,9 @@
 
 ## 💻 The project 
    The classic tic tac toe.
+  
+   ![image](https://github.com/VitorFerronato/tic-tac-toe/assets/94748997/443666de-26cd-4b3d-82ad-7b58059320c0)
+
 
 ## 🚀 Technologies
 * Vue
