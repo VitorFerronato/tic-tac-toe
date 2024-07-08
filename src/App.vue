@@ -25,7 +25,7 @@
       </h2>
       <button
         @click="ResetGame"
-        class="px-4 py-2 bg-pink-500 rounded uppercase font-bold hover:bg-pink-600 duration-300"
+        class="px-4 py-2 bg-cyan-600 text-white rounded uppercase font-bold hover:text-indigo-100 duration-300"
       >
         Reset
       </button>
@@ -90,6 +90,6 @@ const ResetGame = () => {
 
 <style>
 body {
-  @apply bg-gray-800 text-white;
+  @apply bg-cyan-950 text-white;
 }
 </style>
