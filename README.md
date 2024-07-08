@@ -8,7 +8,8 @@
 ## 💻 The project 
    The classic tic tac toe.
   
-   ![image](https://github.com/VitorFerronato/tic-tac-toe/assets/94748997/443666de-26cd-4b3d-82ad-7b58059320c0)
+   ![image](https://github.com/VitorFerronato/tic-tac-toe/assets/94748997/b75c3730-6977-4672-86eb-16ddad768031)
+
 
 
 ## 🚀 Technologies
