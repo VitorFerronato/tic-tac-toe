@@ -2,7 +2,7 @@
   <main class="pt-8 text-center">
     <h1 class="mb-8 text-3xl font-bold uppercase">Tic Tac Toe</h1>
 
-    <h3 class="text-xl mb-4">Player {{ player }}'s turn</h3>
+    <h3 v-if="!winner && !isDraw" class="text-xl mb-4">Player {{ player }}'s turn</h3>
 
     <div class="flex flex-col items-center mb-8">
       <div v-for="(row, x) in board" :key="x" class="flex">
@@ -22,6 +22,9 @@
     <div class="text-center">
       <h2 v-if="winner" class="text-6xl font-bold mb-8">
         Player '{{ winner }}' wins!
+      </h2>
+      <h2 v-else-if="isDraw" class="text-6xl font-bold mb-8">
+        It's a Draw!
       </h2>
       <button
         @click="ResetGame"
@@ -68,8 +71,12 @@ const CalculateWinner = (board) => {
 
 const winner = computed(() => CalculateWinner(board.value.flat()));
 
+const isDraw = computed(() => {
+  return !winner.value && board.value.flat().every(cell => cell !== "");
+});
+
 const MakeMove = (x, y) => {
-  if (winner.value) return;
+  if (winner.value || isDraw.value) return;
 
   if (board.value[x][y]) return;
 
